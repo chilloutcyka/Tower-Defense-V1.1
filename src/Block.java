@@ -12,6 +12,11 @@ public class Block extends Rectangle {
 	}
 	
 	public void draw(Graphics g) {
-		g.drawRect(x, y, width, height);
+	g.drawImage(Screen.tileset_ground[groundID], x, y, width, height, null);
+	
+	if(airID != Values.airAir) {
+		g.drawImage(Screen.tileset_ground[airID], x, y, width, height, null);
+		
+	}
 	}
 }

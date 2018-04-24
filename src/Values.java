@@ -1,6 +1,7 @@
 
 public class Values {
 	public static int groundGrass = 0;
+	public static int groundRoad = 1;
 	public static int airAir = -1;
 	
 }
